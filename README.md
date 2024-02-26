@@ -3,7 +3,7 @@ Convert between JSON, YAML and TOML.
 
 ## Features
 - Pretty output with syntax highlighting
-- Lots highlighting style (using [chroma](https://github.com/alecthomas/chroma?tab=readme-ov-file))
+- Lots of highlighting style (using [chroma](https://github.com/alecthomas/chroma?tab=readme-ov-file))
 
 ## Intallation
 Run `go install`:
