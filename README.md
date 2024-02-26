@@ -8,14 +8,14 @@ Convert between JSON, YAML and TOML.
 ## Intallation
 Run `go install`:
 ```console
-go install github.com/9yokuro/capra@latest
+$ go install github.com/9yokuro/capra@latest
 ```
 
 Or Download the binary from the [release page](https://github.com/9yokuro/capra/releases)
 
 ## Usage
 ```console
-capra --help
+$ capra --help
 
 Usage of capra:
   -f, --format string   Set the output format (default "json")
@@ -26,12 +26,12 @@ Usage of capra:
 
 To output converted data to stdout:
 ```console
-capra --format=json foo.yaml bar.toml
+$ capra --format=json foo.yaml bar.toml
 ```
 
 You can use pipe:
 ```console
-echo '{ "foo": "bar" }' | capra --format=yaml
+$ echo '{ "foo": "bar" }' | capra --format=yaml
 
 foo: bar
 ```
@@ -41,12 +41,12 @@ foo: bar
 
 To write converted data to a file:
 ```console
-capra --format=json --no-highlight foo.yaml bar.toml > baz.json
+$ capra --format=json --no-highlight foo.yaml bar.toml > baz.json
 ```
 
 With [jq](https://github.com/jqlang/jq):
 ```console
-echo '{ "foo": [ { "bar": "baz" } ] }' | capra --format=json --no-highlight | jq -r '.foo[].bar'
+$ echo '{ "foo": [ { "bar": "baz" } ] }' | capra --format=json --no-highlight | jq -r '.foo[].bar'
 
 baz
 ```
