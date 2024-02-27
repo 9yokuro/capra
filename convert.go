@@ -18,7 +18,7 @@ func jsonToMap(data []byte) (map[string]any, error) {
 }
 
 func mapToJSON(m *map[string]any) ([]byte, error) {
-	data, err := json.MarshalIndent(m, "", "  ")
+	data, err := json.MarshalIndent(m, "", "    ")
 
 	if err != nil {
 		return []byte{}, err
