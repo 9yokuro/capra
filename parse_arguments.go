@@ -24,7 +24,7 @@ func ParseArguments() error {
 	pflag.Parse()
 
 	if options.version {
-		fmt.Println("capra 0.1.0")
+		fmt.Println("capra 0.1.1")
 
 		return nil
 	}
